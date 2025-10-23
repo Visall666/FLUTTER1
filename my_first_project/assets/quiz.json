@@ -1,0 +1,138 @@
+{
+  "id": "quiz-1",
+  "title": "Testing Quiz",
+  "questions": [
+    {
+      "id": "q1",
+      "title": "How many Capitals does Cambodia have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "goodChoice": "1",
+      "points": 40
+    },
+    {
+      "id": "q2",
+      "title": "How many days in a week?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "goodChoice": "7",
+      "points": 60
+    }
+  ],
+  "submissions": [
+    {
+      "id": "d9b795d8-eda8-4eee-bc78-3ce7b999e224",
+      "player": {
+        "id": "2976116f-1bdc-4b1d-b5a5-f6c7c8ebb19a",
+        "name": "Lyly"
+      },
+      "answers": [
+        {
+          "id": "0c4d0740-9e04-424b-befa-218fae9066dd",
+          "questionId": "q1",
+          "answerChoice": "2"
+        },
+        {
+          "id": "f9c37b6d-298a-456b-8389-12f8202be940",
+          "questionId": "q2",
+          "answerChoice": "7"
+        }
+      ],
+      "scoreInPoint": 60,
+      "scoreInPercentage": 50
+    },
+    {
+      "id": "da1c70e4-32a1-413c-8a11-8f6271042566",
+      "player": {
+        "id": "2c24aef9-be69-42d2-ac81-5697a24f8449",
+        "name": "Visal"
+      },
+      "answers": [
+        {
+          "id": "fca1b7c9-eeb1-4e92-b66a-7f3e9faa061b",
+          "questionId": "q1",
+          "answerChoice": "1"
+        },
+        {
+          "id": "d3d761a3-cac6-4e31-8fae-0fea0ba48251",
+          "questionId": "q2",
+          "answerChoice": "7"
+        }
+      ],
+      "scoreInPoint": 100,
+      "scoreInPercentage": 100
+    },
+    {
+      "id": "3f2ac4a5-14dd-4d3d-a337-8aac3328b0a1",
+      "player": {
+        "id": "258efef5-8f28-4628-b4ca-b7ef6a7bd904",
+        "name": "haha"
+      },
+      "answers": [
+        {
+          "id": "0e8fc345-835c-4039-9929-f67c312955c6",
+          "questionId": "q1",
+          "answerChoice": "3"
+        },
+        {
+          "id": "d550b39e-f519-478b-81af-491b15a40f54",
+          "questionId": "q2",
+          "answerChoice": "3"
+        }
+      ],
+      "scoreInPoint": 0,
+      "scoreInPercentage": 0
+    },
+    {
+      "id": "f2b81fb5-0b58-48a4-a7da-27289ef61e24",
+      "player": {
+        "id": "55eff9ba-9392-4a73-9926-c93932805bde",
+        "name": "hehehe"
+      },
+      "answers": [
+        {
+          "id": "b971e1f8-324b-4302-b1ae-66af596b6ab9",
+          "questionId": "q1",
+          "answerChoice": "1"
+        },
+        {
+          "id": "fff566a8-f0bf-4733-a794-e69f2dab1f5f",
+          "questionId": "q2",
+          "answerChoice": "7"
+        }
+      ],
+      "scoreInPoint": 100,
+      "scoreInPercentage": 100
+    },
+    {
+      "id": "43924edd-07db-4302-a427-3a38cc210fe7",
+      "player": {
+        "id": "c185ed53-44ff-47c2-9204-c95198db21de",
+        "name": "LingLing"
+      },
+      "answers": [
+        {
+          "id": "31b11eeb-3616-4730-b6f8-0787625f02dd",
+          "questionId": "q1",
+          "answerChoice": "2"
+        },
+        {
+          "id": "65e51521-50be-4033-b012-562b1177a58e",
+          "questionId": "q2",
+          "answerChoice": "7"
+        }
+      ],
+      "scoreInPoint": 60,
+      "scoreInPercentage": 50
+    }
+  ]
+}
