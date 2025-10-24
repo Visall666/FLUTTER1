@@ -123,7 +123,6 @@ class QuizRepository {
   void createBackup(String backupPath) {
     try {
       final originalFile = File(filePath);
-      final backupFile = File(backupPath);
       
       if (originalFile.existsSync()) {
         originalFile.copySync(backupPath);
