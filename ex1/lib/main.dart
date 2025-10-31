@@ -1,35 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
+
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.grey[200],
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              GradientButton(
-                text: 'Login',
-                gradientColors: const [
-                  Colors.orange,
-                  Colors.deepOrangeAccent,
-                ],
-                onPressed: () {
-                  print('Login Button Pressed!');
-                },
-              ),
-              const SizedBox(height: 20), // space between buttons
-              GradientButton(
-                text: 'Sign Up',
-                gradientColors: const [
-                  Colors.lightBlueAccent,
-                  Colors.blue,
-                ],
-                onPressed: () {
-                  print('Sign Up Button Pressed!');
-                },
-              ),
+              GradientButton("hello 1", start: Colors.blue, end: Colors.red),
+              SizedBox(height: 10),
+              GradientButton("hello 2", start: Colors.green, end: Colors.purple),
+              SizedBox(height: 10),
+              GradientButton("hello 3", start: Colors.orange, end: Colors.pink),
             ],
           ),
         ),
@@ -38,51 +22,36 @@ void main() {
   );
 }
 
+// Custom GradientButton widget
 class GradientButton extends StatelessWidget {
   final String text;
-  final List<Color> gradientColors;
-  final VoidCallback onPressed;
+  final Color start;
+  final Color end;
 
-  const GradientButton({
-    super.key,
-    required this.text,
-    required this.gradientColors,
-    required this.onPressed,
-  });
+  const GradientButton(this.text, {super.key, required this.start, required this.end});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Container(
-        width: 200,
-        height: 50,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25),
-          gradient: LinearGradient(
-            colors: gradientColors,
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 8,
-              offset: const Offset(0, 4),
-            ),
-          ],
-        ),
-        child: Center(
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 1.2,
-            ),
-          ),
-        ),
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: [start, end]),
+        borderRadius: BorderRadius.circular(30),
       ),
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.transparent,
+          shadowColor: Colors.transparent,
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 40),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+        ),
+        onPressed: () {
+          print('$text pressed');
+        },
+        child: Text(
+          text,
+          style: const TextStyle(color: Colors.white, fontSize: 35),
+        )
+      )
     );
   }
 }
