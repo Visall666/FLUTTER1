@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+enum Product {
+  dart('Dart', 'the best object language', '../assets/dart.png'),
+  flutter('Flutter', 'the best mobile widget library', '../assets/flutter.png'),
+  firebase('Firebase', 'the best cloud database', '../assets/firebase.png');
+
+  final String title;
+  final String description;
+  final String imagePath;
+
+  const Product(this.title, this.description, this.imagePath);
+}
+
 class ProductsScreen extends StatelessWidget {
   const ProductsScreen({Key? key}) : super(key: key);
 
@@ -25,18 +37,6 @@ class ProductsScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-enum Product {
-  dart('Dart', 'the best object language', '../assets/dart.png'),
-  flutter('Flutter', 'the best mobile widget library', '../assets/flutter.png'),
-  firebase('Firebase', 'the best cloud database', '../assets/firebase.png');
-
-  final String title;
-  final String description;
-  final String imagePath;
-
-  const Product(this.title, this.description, this.imagePath);
 }
 
 class ProductCard extends StatelessWidget {
