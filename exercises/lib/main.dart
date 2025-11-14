@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'exercises/ex3.dart';
+import 'exercises/ex4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,19 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
 
       // Change this home to test different exercises
-      // home: const MyHobbies(),
-      home: const Product(),
+      home: const WeatherApp(),
 
-      // Or use named routes:
-      routes: {
-        // '/ex1': (_) => const MyHobbies(),
-        // '/ex2': (_) => const CustomButtons(),
-        '/ex3': (_) => const Product(),
-
-      },
     );
   }
 }
