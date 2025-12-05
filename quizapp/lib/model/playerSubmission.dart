@@ -1,6 +1,6 @@
 class Submission {
   final List<int> answers;
-  final int score;
+  int score;
 
-  Submission({required this.answers, required this.score});
+  Submission({required this.answers, this.score = 0 });
 }

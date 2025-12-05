@@ -26,7 +26,6 @@ class WelcomeScreen extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(top: 40),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     // Quiz Logo
                     Image.asset(
@@ -43,8 +42,8 @@ class WelcomeScreen extends StatelessWidget {
             // Button-Start
             Positioned(
               bottom: 90,
-              left: 100,
-              right: 100,
+              left: 150,
+              right: 150,
               height: 60,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
